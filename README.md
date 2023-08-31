@@ -1,0 +1,1 @@
+conceito do minify onde e compilado os codigos sccs em apenas uma linha no arquivo css , para melhor desempenho

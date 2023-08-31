@@ -1,0 +1,49 @@
+
+/* Usando o minify para compilar todo o arquivo scss em apenas uma linha no arquivo css para ter um ganho no desempenho
+        -- sass sass/index.scss:style/index.css --style compressed
+*/
+
+.container {
+    height: 80vh;
+    width: 80vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "box1 box2"
+      "sorriso sorriso";
+    border: solid 2px black;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    margin: 40px;
+    background-color: darkgray;
+  }
+  
+  $cor-box: green;
+  $width-div: 90px;
+
+  .box1 {
+    width: $width-div;
+    height: 100px;
+    background-color: $cor-box;
+    border: solid 2px black;
+    grid-area: box1;
+  }
+  
+  .box2 {
+    width: $width-div;
+    height: 100px;
+    background-color: $cor-box;
+    border: solid 2px black;
+    grid-area: box2;
+  }
+  
+  .sorriso {
+    width: 100%;
+    height: 40px;
+    background-color: $cor-box;
+    border: solid 2px black;
+    grid-area: sorriso;
+  }
+  
